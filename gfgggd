@@ -1,0 +1,30 @@
+[33mcommit a5d4bc4a1d2c253d835238925d9da22678fae01a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sai Krishna Perugu <p.saikrishna355@gmail.com>
+Date:   Sun Oct 26 11:24:24 2025 +0530
+
+    Implemented Product Service and Category Service
+
+[33mcommit 3959afe8a8eed51edace56a1fe72642767b7e2b3[m
+Author: Sai Krishna Perugu <p.saikrishna355@gmail.com>
+Date:   Thu Oct 2 15:31:12 2025 +0530
+
+    feat: Implement product service and repository with exception handling
+
+[33mcommit c354acd0f235d7c430a8a21872fdf8595322a71e[m
+Author: Sai Krishna Perugu <p.saikrishna355@gmail.com>
+Date:   Wed Sep 10 13:31:07 2025 +0530
+
+    feat: Update project configuration and add product service methods
+    
+    - Added Spring Boot actuator dependency to pom.xml.
+    - Changed MySQL dependency to PostgreSQL in pom.xml.
+    - Enhanced Image model by removing unnecessary comments.
+    - Updated application.properties with additional Hibernate properties for PostgreSQL.
+    - Added a comprehensive ProductService interface with methods for product retrieval and management.
+
+[33mcommit 691e95ff8ff81af55614cebd29f04276eac9fd73[m
+Author: Sai Krishna Perugu <p.saikrishna355@gmail.com>
+Date:   Mon Sep 1 20:57:47 2025 +0530
+
+    EcommerceWebAppApplication
+    - Developed model classes: Category, Product, Image with JPA annotations
