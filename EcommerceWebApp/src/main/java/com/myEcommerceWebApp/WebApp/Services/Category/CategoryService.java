@@ -31,7 +31,10 @@ public class CategoryService implements CategoryServiceInterface {
 
     @Override
     public Category addCategory(Category category) {
-        return  ;
+        return Optional.OfNullable(getCategoryById(id)).map( oldCategory ->{
+            oldCategory.setName(category.getCategory());
+            return categoryRepository.save(oldCategory);
+        }) .orElseThrow(() -> ResourceNotFoundException("Category Not Found"));
     }
 
     @Override
