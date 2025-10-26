@@ -2,13 +2,15 @@ package com.myEcommerceWebApp.WebApp.Services.Product;
 
 import java.util.List;
 
+import com.myEcommerceWebApp.Requests.AddProductRequest;
+import com.myEcommerceWebApp.Requests.ProductUpdateRequest;
 import com.myEcommerceWebApp.WebApp.Model.Product;
 
 public interface ProductServiceInterface  {
 
-    Product addProduct(Product product);
+    Product addProduct(AddProductRequest product);
     Product getProductById(Long id);
-    void updateProduct(Product product, Long productId);
+    Product updateProduct(ProductUpdateRequest product, Long productId);
     void deleteProduct(Long id);
     List<Product> getAllProducts();
     List<Product> getProductsByCategory(String category);
@@ -17,5 +19,4 @@ public interface ProductServiceInterface  {
     List<Product> getProductsByName(String name);
     List<Product> getProductsByBrandAndName(String brand, String name);
     Long countProductsByBrandAndName(String brand, String name);
-
 }
